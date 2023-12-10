@@ -338,10 +338,6 @@ for epoch in range(num_epochs):
 
         iters += 1
 
-        # if epoch % 1 == 0:
-        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
-        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
-
 # Plot real images
 plt.figure(figsize=(32,32))
 plt.subplot(1,2,1)
@@ -450,10 +446,6 @@ for epoch in range(num_epochs_eval):
                 img_list_fake[0][1].append(vutils.make_grid(imgs_fake.detach().cpu(), padding=2, normalize=True))
 
         iters += 1
-
-        # if epoch % 1 == 0:
-        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
-        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plotting images and loss from Evaluation phase (original dataset)
 # Plot real images
@@ -605,10 +597,6 @@ for epoch in range(num_epochs):
 
         iters += 1
 
-        # if epoch % 1 == 0:
-        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
-        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
-
 # Plot real images
 plt.figure(figsize=(32,32))
 plt.subplot(1,2,1)
@@ -717,10 +705,6 @@ for epoch in range(num_epochs_eval):
                 img_list_fake[1][1].append(vutils.make_grid(imgs_fake.detach().cpu(), padding=2, normalize=True))
 
         iters += 1
-
-        # if epoch % 1 == 0:
-        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
-        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plotting images and loss from Evaluation phase (using pixel erased-trained network)
 # Plot real images
@@ -864,10 +848,6 @@ for epoch in range(num_epochs):
 
         iters += 1
 
-        # if epoch % 1 == 0:
-        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
-        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
-
 # Plot real images
 plt.figure(figsize=(32,32))
 plt.subplot(1,2,1)
@@ -976,10 +956,6 @@ for epoch in range(num_epochs_eval):
                 img_list_fake[2][1].append(vutils.make_grid(imgs_fake.detach().cpu(), padding=2, normalize=True))
 
         iters += 1
-
-        # if epoch % 1 == 0:
-        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
-        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plotting images and loss from Evaluation phase (using low resolution-trained nework)
 # Plot real images
@@ -1129,10 +1105,6 @@ for epoch in range(num_epochs):
 
         iters += 1
 
-        # if epoch % 1 == 0:
-        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
-        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
-
 # Plot real images
 plt.figure(figsize=(32,32))
 plt.subplot(1,2,1)
@@ -1241,10 +1213,6 @@ for epoch in range(num_epochs_eval):
                 img_list_fake[3][1].append(vutils.make_grid(imgs_fake.detach().cpu(), padding=2, normalize=True))
 
         iters += 1
-
-        # if epoch % 1 == 0:
-        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
-        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plotting images and loss from Evaluation phase (using Gaussian noise-trained nework)
 # Plot real images
