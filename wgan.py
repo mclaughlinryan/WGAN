@@ -326,6 +326,10 @@ for epoch in range(num_epochs):
             G_losses_train[0].append(errG.item())
             D_losses_train[0].append(errD.item())
 
+            if epoch % 1 == 0:
+                print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+                      % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+
         # Keep track of generator's performance by saving output
         if (iters % 500 == 0) or ((epoch == num_epochs-1) and (i == len(dataloader)-1)):
             with torch.no_grad():
@@ -334,8 +338,9 @@ for epoch in range(num_epochs):
 
         iters += 1
 
-    if epoch % 1 == 0:
-        print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f' % (errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+        # if epoch % 1 == 0:
+        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plot real images
 plt.figure(figsize=(32,32))
@@ -434,6 +439,10 @@ for epoch in range(num_epochs_eval):
             G_losses_eval[0].append(errG.item())
             D_losses_eval[0].append(errD.item())
 
+            if epoch % 1 == 0:
+                print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+                      % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+
         # Keep track of generator's performance by saving output
         if (iters % 500 == 0) or ((epoch == num_epochs-1) and (i == len(dataloader)-1)):
             with torch.no_grad():
@@ -442,8 +451,9 @@ for epoch in range(num_epochs_eval):
 
         iters += 1
 
-    if epoch % 1 == 0:
-        print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f' % (errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+        # if epoch % 1 == 0:
+        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plotting images and loss from Evaluation phase (original dataset)
 # Plot real images
@@ -583,6 +593,10 @@ for epoch in range(num_epochs):
             G_losses_train[1].append(errG.item())
             D_losses_train[1].append(errD.item())
 
+            if epoch % 1 == 0:
+                print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+                      % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+
         # Keep track of generator's performance by saving output
         if (iters % 500 == 0) or ((epoch == num_epochs-1) and (i == len(dataloader_erase)-1)):
             with torch.no_grad():
@@ -591,8 +605,9 @@ for epoch in range(num_epochs):
 
         iters += 1
 
-    if epoch % 1 == 0:
-        print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f' % (errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+        # if epoch % 1 == 0:
+        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plot real images
 plt.figure(figsize=(32,32))
@@ -691,6 +706,10 @@ for epoch in range(num_epochs_eval):
             G_losses_eval[1].append(errG.item())
             D_losses_eval[1].append(errD.item())
 
+            if epoch % 1 == 0:
+                print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+                      % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+
         # Keep track of generator's performance by saving output
         if (iters % 500 == 0) or ((epoch == num_epochs-1) and (i == len(dataloader)-1)):
             with torch.no_grad():
@@ -699,8 +718,9 @@ for epoch in range(num_epochs_eval):
 
         iters += 1
 
-    if epoch % 1 == 0:
-        print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f' % (errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+        # if epoch % 1 == 0:
+        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plotting images and loss from Evaluation phase (using pixel erased-trained network)
 # Plot real images
@@ -832,6 +852,10 @@ for epoch in range(num_epochs):
             G_losses_train[2].append(errG.item())
             D_losses_train[2].append(errD.item())
 
+            if epoch % 1 == 0:
+                print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+                      % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+
         # Keep track of generator's performance by saving output
         if (iters % 500 == 0) or ((epoch == num_epochs-1) and (i == len(dataloader_lr)-1)):
             with torch.no_grad():
@@ -840,8 +864,9 @@ for epoch in range(num_epochs):
 
         iters += 1
 
-    if epoch % 1 == 0:
-        print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f' % (errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+        # if epoch % 1 == 0:
+        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plot real images
 plt.figure(figsize=(32,32))
@@ -940,6 +965,10 @@ for epoch in range(num_epochs_eval):
             G_losses_eval[2].append(errG.item())
             D_losses_eval[2].append(errD.item())
 
+            if epoch % 1 == 0:
+                print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+                      % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+
         # Keep track of generator's performance by saving output
         if (iters % 500 == 0) or ((epoch == num_epochs-1) and (i == len(dataloader)-1)):
             with torch.no_grad():
@@ -948,8 +977,9 @@ for epoch in range(num_epochs_eval):
 
         iters += 1
 
-    if epoch % 1 == 0:
-        print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f' % (errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+        # if epoch % 1 == 0:
+        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plotting images and loss from Evaluation phase (using low resolution-trained nework)
 # Plot real images
@@ -1087,6 +1117,10 @@ for epoch in range(num_epochs):
             G_losses_train[3].append(errG.item())
             D_losses_train[3].append(errD.item())
 
+            if epoch % 1 == 0:
+                print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+                      % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+
         # Keep track of generator's performance by saving output
         if (iters % 500 == 0) or ((epoch == num_epochs-1) and (i == len(dataloader_noise)-1)):
             with torch.no_grad():
@@ -1095,8 +1129,9 @@ for epoch in range(num_epochs):
 
         iters += 1
 
-    if epoch % 1 == 0:
-        print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f' % (errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+        # if epoch % 1 == 0:
+        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plot real images
 plt.figure(figsize=(32,32))
@@ -1142,7 +1177,7 @@ for epoch in range(num_epochs_eval):
 
         # Forward pass batch through D
         real_eval = netD(real_cpu)
-        errD_eral = torch.mean(real_eval)
+        errD_real = torch.mean(real_eval)
 
         # Calculate gradients for D in backward pass
         D_x = real_eval.mean().item()
@@ -1195,6 +1230,10 @@ for epoch in range(num_epochs_eval):
             G_losses_train[3].append(errG.item())
             D_losses_train[3].append(errD.item())
 
+            if epoch % 1 == 0:
+                print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+                      % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+
         # Keep track of generator's performance by saving output
         if (iters % 500 == 0) or ((epoch == num_epochs-1) and (i == len(dataloader)-1)):
             with torch.no_grad():
@@ -1203,8 +1242,9 @@ for epoch in range(num_epochs_eval):
 
         iters += 1
 
-    if epoch % 1 == 0:
-        print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f' % (errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+        # if epoch % 1 == 0:
+        #     print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
+        #           % (epoch, num_epochs, i, len(dataloader), errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
 # Plotting images and loss from Evaluation phase (using Gaussian noise-trained nework)
 # Plot real images
