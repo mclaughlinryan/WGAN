@@ -242,7 +242,6 @@ print(netD)
 
 # Create batch of latent vectors that will be used to visualize
 # progression of the generator
-
 # Setup Adam optimizers for G and D
 optimizerD = optim.Adam(netD.parameters(), lr=lr, betas=(beta1, 0.999))
 optimizerG = optim.Adam(netG.parameters(), lr=lr, betas=(beta1, 0.999))
@@ -264,7 +263,6 @@ print("Starting Training Loop...")
 for epoch in range(num_epochs):
     # For each batch in the dataloader
     for i, data in enumerate(dataloader, 0):
-
         # Update D network
         # Train with real batch
         # Format batch
@@ -374,7 +372,6 @@ print("Starting Evaluation Loop...")
 for epoch in range(num_epochs_eval):
     # For each batch in the dataloader
     for i, data in enumerate(dataloader, 0):
-
         # Update D network
         # Train with real batch
         # Format batch
@@ -521,7 +518,6 @@ print("Starting Training Loop...")
 for epoch in range(num_epochs):
     # For each batch in the dataloader
     for i, data in enumerate(dataloader_erase, 0):
-
         # Update D network
         # Train with real batch
         # Format batch
@@ -633,7 +629,6 @@ print("Starting Evaluation Loop...")
 for epoch in range(num_epochs_eval):
     # For each batch in the dataloader
     for i, data in enumerate(dataloader, 0):
-
         # Update D network
         # Train with real batch
         # Format batch
@@ -770,7 +765,6 @@ print("Starting Training Loop...")
 for epoch in range(num_epochs):
     # For each batch in the dataloader
     for i, data in enumerate(dataloader_lr, 0):
-
         # Update D network
         # Train with real batch
         # Format batch
@@ -884,7 +878,6 @@ print("Starting Evaluation Loop...")
 for epoch in range(num_epochs_eval):
     # For each batch in the dataloader
     for i, data in enumerate(dataloader, 0):
-
         # Update D network
         # Train with real batch
         # Format batch
@@ -1029,7 +1022,6 @@ print("Starting Training Loop...")
 for epoch in range(num_epochs):
     # For each batch in the dataloader
     for i, data in enumerate(dataloader_noise, 0):
-
         # Update D network
         # Train with real batch
         # Format batch
@@ -1141,7 +1133,6 @@ print("Starting Evaluation Loop...")
 for epoch in range(num_epochs_eval):
     # For each batch in the dataloader
     for i, data in enumerate(dataloader, 0):
-
         # Update D network
         # Train with real batch
         # Format batch
