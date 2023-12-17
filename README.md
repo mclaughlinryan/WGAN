@@ -5,3 +5,9 @@ This program was written with PyTorch and uses a GAN with a Wasserstein loss fun
 ### Training on MNIST images
 
 MNIST images:
+
+<img width="800" alt="wgan 5 1" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/b9c7221c-2a43-425c-98d6-e5bed8cee84a">
+
+&nbsp;
+
+Output images from the generator:
