@@ -22,4 +22,4 @@ Pixel-erased MNIST images:
 
 &nbsp;
 
-Images after applying the pixel-erase data loss function to the generator output:
+Images after applying pixel erasing to the generator output:
