@@ -41,3 +41,9 @@ Low-resolved MNIST images:
 &nbsp;
 
 Images after applying low-resolving to the generator output:
+
+<img width="600" alt="wgan 13 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/6b37d72f-b5e2-41c4-97c0-5d5c56eb3431">
+
+&nbsp;
+
+Images directly from the generator output without any data loss function applied:
