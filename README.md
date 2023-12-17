@@ -11,3 +11,9 @@ MNIST images:
 &nbsp;
 
 Output images from the generator:
+
+<img width="800" alt="wgan 5 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/157fb4ab-428a-45e7-9a17-48b6f147ce87">
+
+### Training to recover pixel-erased image data
+
+Pixel-erased MNIST images:
