@@ -17,3 +17,9 @@ Output images from the generator:
 ### Training to recover pixel-erased image data
 
 Pixel-erased MNIST images:
+
+<img width="800" alt="wgan 9 1" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/f3168d32-90f8-4b1b-abd3-6c54817ef736">
+
+&nbsp;
+
+Images after applying the pixel-erase data loss function to the generator output:
