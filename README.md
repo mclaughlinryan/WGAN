@@ -26,4 +26,12 @@ Images after applying pixel erasing to the generator output:
 
 <img width="600" alt="wgan 9 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/0b24d89b-26c0-492e-9416-e87d9a8be929">
 
+&nbsp;
+
 Images directly from the generator output without any data loss function applied:
+
+<img width="600" alt="wgan 11 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/935a61fb-835d-4296-8ad2-acf9ae330da6">
+
+### Training to recover low-resolved image data
+
+Low-resolved MNIST images:
