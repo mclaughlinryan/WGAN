@@ -47,3 +47,9 @@ Images after applying low-resolving to the generator output:
 &nbsp;
 
 Images directly from the generator output without any data loss function applied:
+
+<img width="600" alt="wgan 15 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/c8f44fba-36ff-4339-aa6a-3538005bd95d">
+
+### Training to recover Gaussian noised image data
+
+Noised MNIST images:
