@@ -6,22 +6,22 @@ This program was written with PyTorch and uses a GAN with a Wasserstein loss fun
 
 MNIST images:
 
-<img width="800" alt="wgan 5 1" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/b9c7221c-2a43-425c-98d6-e5bed8cee84a">
+<img width="600" alt="wgan 5 1" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/b9c7221c-2a43-425c-98d6-e5bed8cee84a">
 
 &nbsp;
 
 Output images from the generator:
 
-<img width="800" alt="wgan 5 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/157fb4ab-428a-45e7-9a17-48b6f147ce87">
+<img width="600" alt="wgan 5 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/157fb4ab-428a-45e7-9a17-48b6f147ce87">
 
 ### Training to recover pixel-erased image data
 
 Pixel-erased MNIST images:
 
-<img width="800" alt="wgan 9 1" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/f3168d32-90f8-4b1b-abd3-6c54817ef736">
+<img width="600" alt="wgan 9 1" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/f3168d32-90f8-4b1b-abd3-6c54817ef736">
 
 &nbsp;
 
 Images after applying pixel erasing to the generator output:
 
-<img width="800" alt="wgan 9 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/0b24d89b-26c0-492e-9416-e87d9a8be929">
+<img width="600" alt="wgan 9 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/0b24d89b-26c0-492e-9416-e87d9a8be929">
