@@ -59,3 +59,9 @@ Noised MNIST images:
 &nbsp;
 
 Images after adding Gaussian noise to the generator output:
+
+<img width="600" alt="wgan 17 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/95b78745-7f9b-4035-ba38-9baad532256e">
+
+&nbsp;
+
+Images directly from the generator output without any data loss function applied:
