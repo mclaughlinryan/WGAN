@@ -53,3 +53,9 @@ Images directly from the generator output without any data loss function applied
 ### Training to recover Gaussian noised image data
 
 Noised MNIST images:
+
+<img width="600" alt="17 1" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/2a8b8db1-9e80-4347-89cb-88aabbde1c52">
+
+&nbsp;
+
+Images after adding Gaussian noise to the generator output:
