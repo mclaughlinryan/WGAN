@@ -65,3 +65,5 @@ Images after adding Gaussian noise to the generator output:
 &nbsp;
 
 Images directly from the generator output without any data loss function applied:
+
+<img width="600" alt="wgan 19 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/4f34d385-532d-4d5a-8593-e6f71cb6a7f7">
