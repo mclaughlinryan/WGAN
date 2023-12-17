@@ -35,3 +35,9 @@ Images directly from the generator output without any data loss function applied
 ### Training to recover low-resolved image data
 
 Low-resolved MNIST images:
+
+<img width="600" alt="wgan 13 1" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/a530c94c-c482-4dbb-aa50-8b532dfad5f0">
+
+&nbsp;
+
+Images after applying low-resolving to the generator output:
