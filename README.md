@@ -32,8 +32,6 @@ Images directly from the generator output without any data loss function applied
 
 <img width="600" alt="wgan 11 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/935a61fb-835d-4296-8ad2-acf9ae330da6">
 
-As can be seen, the generator does a good job capturing the data distribution of the unaltered MNIST images in this scenario.
-
 ### Training to recover low-resolved image data
 
 Low-resolved MNIST images:
