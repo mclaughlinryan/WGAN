@@ -23,3 +23,5 @@ Pixel-erased MNIST images:
 &nbsp;
 
 Images after applying pixel erasing to the generator output:
+
+<img width="800" alt="wgan 9 2" src="https://github.com/mclaughlinryan/WGAN/assets/150348966/0b24d89b-26c0-492e-9416-e87d9a8be929">
